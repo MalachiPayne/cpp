@@ -6,7 +6,6 @@
 ### C++ ###
 # Prerequisites
 *.d
-*.Executables
 
 # Compiled Object files
 *.slo
@@ -37,6 +36,8 @@
 *.exe
 *.out
 *.app
+**
+!**.*
 
 ### macOS ###
 # General
@@ -73,7 +74,7 @@ Temporary Items
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-*.vscode
+.vscode
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
