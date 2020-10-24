@@ -7,7 +7,7 @@ using namespace std;
 bool username_exists(string username)
 
     int main()
-{ /*
+{
     // ---------- CONNECTING AND EDITING THE userDetails.txt FILE ----------
 
     // getting and printing file data
@@ -28,5 +28,4 @@ bool username_exists(string username)
             << generate_password() << endl; //Password
     cout << userDetailsFile;
     outFile.close();
-    */
 }
