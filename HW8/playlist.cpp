@@ -250,19 +250,19 @@ public:
     {
         // used stack for this: https://www.geeksforgeeks.org/stack-in-cpp-stl/
 
-        stack<Node *> nodes;
+        stack<Node *> nodeStack;
 
         Node *nodePtr = head;
         while (nodePtr != nullptr) // inserting the nodes into the stack
         {
-            nodes.push(nodePtr);
+            nodeStack.push(nodePtr);
             nodePtr = nodePtr->getNext();
         }
 
-        while (not nodes.empty()) // deleting the nodes
+        while (not nodeStack.empty()) // deleting the nodes
         {
-            Node *const topNode = nodes.top();
-            nodes.pop();
+            Node *const topNode = nodeStack.top();
+            nodeStack.pop();
             cout << "Deleting... [" << topNode->getSongName() << "]" << endl;
             delete topNode;
         }
